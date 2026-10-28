@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Girl, Listen Table Sign</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans:wght@400;700&family=Playfair+Display:ital,wght@1,500&display=swap">
+<style>
+/* A 5x7 table sign in the hello.katekness.com style. Designed on a 500x700 canvas and scaled to fit the window. */
+:root{--paper:#fbf6ee;--navy:#1f2c5f;--body:#4f5577;--pink:#ea5f95;--pinkwash:#fde6ee;--sunwash:#fff5d6;--gold:#a2780a;
+  --display:"Gloock",Georgia,serif;--accent:"Playfair Display",Georgia,serif;--sans:"Open Sans","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#e9e4dc}
+body{display:grid;place-items:center;overflow:hidden}
+.stage{width:calc(500px*var(--s,1));height:calc(700px*var(--s,1))}
+.sign{width:500px;height:700px;transform:scale(var(--s,1));transform-origin:0 0;background:var(--paper);color:var(--navy);font-family:var(--sans);
+  padding:30px 34px 34px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden}
+.sign p{margin:0}
+.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--pink)}
+
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px}
+.phone{width:92px;filter:drop-shadow(0 7px 12px rgba(31,44,95,.16));transform:rotate(-4deg);margin-bottom:4px}
+h1{font-family:var(--display);font-weight:400;font-size:60px;line-height:.98;margin:2px 0 0;color:var(--navy)}
+.sub{font-family:var(--accent);font-style:italic;font-weight:500;font-size:20px;line-height:1.3}
+
+.panel{border-radius:24px;padding:22px 22px 20px;position:relative}
+.quote{margin-top:8px;background:var(--pinkwash);text-align:center;padding:22px 112px 20px 24px;min-height:120px;display:flex;flex-direction:column;justify-content:center}
+.quote .q{font-family:var(--accent);font-style:italic;font-weight:500;font-size:19px;line-height:1.35;color:var(--navy);text-wrap:balance}
+.quote b{display:block;margin-top:10px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--pink)}
+.quote i{display:block;font-style:normal;font-size:11px;color:var(--body);margin-top:2px}
+.notnow{position:absolute;right:-8px;top:-6px;width:112px;filter:drop-shadow(0 6px 10px rgba(31,44,95,.16));transform:rotate(6deg)}
+
+.scan{background:#fff;display:flex;align-items:center;gap:18px;border:1px solid #efe5d8}
+.scan img.qr{width:128px;height:128px;flex:none;display:block}
+.scan h2{font-family:var(--display);font-weight:400;font-size:27px;line-height:1.05;margin:0 0 6px}
+.scan ul{margin:0;padding:0;list-style:none;display:grid;gap:3px;font-size:13px;color:var(--body)}
+.scan li::before{content:"♥";color:var(--pink);font-size:10px;margin-right:7px;position:relative;top:-1px}
+.scan .url{margin-top:8px;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--pink)}
+
+.foot{margin-top:auto;display:flex;justify-content:center;gap:10px;align-items:center;font-size:12px;color:var(--body)}
+.foot strong{font-family:var(--display);font-weight:400;font-size:18px;color:var(--navy)}
+.foot .dot{width:4px;height:4px;border-radius:50%;background:var(--pink)}
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+<div class="sign">
+  <div class="hero">
+    <img class="phone" src="stickers/phone.webp" alt="">
+    <div class="eyebrow">Signed copies today</div>
+    <h1>Girl, Listen</h1>
+    <p class="sub">Your Fascia Needs to Talk to You</p>
+  </div>
+
+  <div class="panel quote">
+    <img class="notnow" src="stickers/notnow.webp" alt="">
+    <p class="q">“A must read for girls of all&nbsp;ages.”</p>
+    <b>Beverly Parker</b><i>Amazon reviewer</i>
+  </div>
+
+  <div class="panel scan">
+    <img class="qr" src="qr.png" alt="QR code for hello.katekness.com">
+    <div>
+      <h2>Scan to say&nbsp;hi</h2>
+      <ul><li>Buy a signed copy</li><li>Win one at noon</li><li>Save my contact</li></ul>
+      <p class="url">hello.katekness.com</p>
+    </div>
+  </div>
+
+  <div class="foot"><strong>$15 signed</strong><span class="dot"></span><span>Venmo, tap to pay or cash</span></div>
+</div>
+</div>
+<script>
+function fit(){var s=Math.min(innerWidth/500,innerHeight/700)*.94;document.documentElement.style.setProperty("--s",s)}
+fit();addEventListener("resize",fit);
+</script>
+</body>
+</html>
