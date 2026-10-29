@@ -1,6 +1,3 @@
 User-agent: *
-Disallow: /sign.html
-Disallow: /email/
+Disallow: /
 Allow: /book/
-
-Sitemap: https://hello.katekness.com/sitemap.xml
