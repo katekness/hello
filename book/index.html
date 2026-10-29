@@ -79,6 +79,22 @@ a{color:inherit}
 .dots button{width:9px;height:9px;border-radius:50%;border:0;padding:0;background:#f3c3d4;cursor:pointer}
 .dots button[aria-current="true"]{background:var(--pink)}
 
+/* leave a review */
+.rate{padding-block:clamp(56px,6vw,72px) clamp(48px,6vw,80px)}
+.rate .box{position:relative;background:var(--pinkwash);border-radius:28px;padding:clamp(28px,4vw,48px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(22px,4vw,48px);align-items:center}
+@media (max-width:860px){.rate .box{grid-template-columns:minmax(0,1fr)}}
+.rate h2{font-size:clamp(1.9rem,3.4vw,2.6rem);max-width:13ch;margin-top:10px}
+.rate .lede{margin-top:12px;color:var(--body);font-size:15.5px;line-height:1.65;max-width:38ch}
+.rate .ways{display:grid;gap:10px}
+.rate .way{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px;border-radius:16px;background:#fff;text-decoration:none;color:var(--navy);border:1px solid #f4cfdc;transition:transform .15s ease}
+.rate .way:hover{transform:translateY(-2px)}
+.rate .way strong{display:block;font-family:var(--display);font-weight:400;font-size:1.25rem;line-height:1.2}
+.rate .way span{display:block;font-size:13px;color:var(--body);margin-top:2px}
+.rate .way i{font-style:normal;font-size:1.4rem;color:var(--pink);flex:none}
+.rate .way.me{background:var(--navy);border-color:var(--navy);color:#fff}
+.rate .way.me span{color:#d8dcf0} .rate .way.me i{color:#f6c93f}
+.rate .stk{position:absolute;right:-12px;top:-86px;width:100px;transform:rotate(7deg)}
+@media (max-width:640px){.rate .stk{left:auto;right:8px;top:-42px;width:88px}.rate .box{padding-top:44px}}
 /* buy + list */
 .duo .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start;padding-bottom:clamp(40px,6vw,72px)}
 @media (max-width:860px){.duo .wrap{grid-template-columns:minmax(0,1fr)}}
@@ -204,6 +220,24 @@ footer a{color:var(--navy);font-weight:600;text-decoration:none}
         <h2>Little notes, now and then</h2>
         <iframe src="https://tally.so/embed/8NNgYY?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;source=bookpage" title="Join the Girl, Listen list"></iframe>
         <p class="small">Form not loading? <a href="https://tally.so/r/8NNgYY?source=bookpage" target="_blank" rel="noopener">Join the list here</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rate" id="leave-a-review">
+    <div class="wrap">
+      <div class="box">
+        <img class="stk" src="../stickers/opinions.webp" alt="Sticker: My Body Has Opinions">
+        <div>
+          <div class="eyebrow">Read it already?</div>
+          <h2>Your body has opinions. So do&nbsp;you.</h2>
+          <p class="lede">Reviews are how other women find this book. A few honest sentences, wherever you bought it, mean more than you&nbsp;know.</p>
+        </div>
+        <div class="ways">
+          <a class="way" href="https://www.amazon.com/review/create-review?asin=B0GV4F3B1Y" target="_blank" rel="noopener"><div><strong>Review on Amazon</strong><span>Paperback or Kindle, any star count is a gift</span></div><i>&rarr;</i></a>
+          <a class="way" href="https://www.barnesandnoble.com/w/girl-listen-kate-kness/1150100454?ean=9798995445814#reviews" target="_blank" rel="noopener"><div><strong>Review on Barnes &amp; Noble</strong><span>Scroll to Customer Reviews and tap Write a Review</span></div><i>&rarr;</i></a>
+          <a class="way me" href="https://tally.so/r/rDD4Nl?source=bookpage" target="_blank" rel="noopener"><div><strong>Send it straight to me</strong><span>Got it from Grove Coffee or at an event? I'd love to read it</span></div><i>&rarr;</i></a>
+        </div>
       </div>
     </div>
   </section>
