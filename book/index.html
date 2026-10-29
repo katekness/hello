@@ -97,7 +97,15 @@ a.place:hover{transform:translateY(-2px)}
 .news .eyebrow{color:var(--gold)}
 .news .stk{transform:rotate(-6deg)}
 .buy .stk{top:-58px;right:-6px;width:104px;transform:rotate(7deg)}
-@media (max-width:860px){.buy .stk{top:-46px;right:6px;width:92px}}
+@media (max-width:860px){.buy .stk{top:-44px;right:8px;width:84px}}
+/* Phones: keep stickers inside the screen and clear of headings */
+@media (max-width:640px){
+  .hero .pic{width:calc(100% - 20px);margin-bottom:26px}
+  .hero .pic .stk{left:-12px;bottom:-28px;width:104px}
+  .panel{padding-top:40px}
+  .panel .stk{width:84px;top:-40px;right:8px}
+  .news iframe{height:600px}
+}
 .news iframe{display:block;width:100%;border:0;height:520px}
 .small{font-size:13px;color:var(--body)} .small a{color:var(--navy);font-weight:700}
 
